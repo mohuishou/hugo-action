@@ -9,7 +9,7 @@ use github action with hugo
 
 ## use
 
-.github/main.workflow
+add `.github/main.workflow` in repo
 
 ```
 workflow "blog ci/cd" {
