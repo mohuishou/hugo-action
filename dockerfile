@@ -11,9 +11,9 @@ LABEL com.github.actions.description="Builds a Hugo site."
 LABEL com.github.actions.icon="sidebar"
 LABEL com.github.actions.color="purple"
 
-RUN apk add git && \
-    wget https://github.com/gohugoio/hugo/releases/download/v0.53/hugo_0.53_Linux-64bit.tar.gz && \
-    tar -xzvf hugo_0.53_Linux-64bit.tar.gz 
+RUN apk add git \
+    && wget https://github.com/gohugoio/hugo/releases/download/v0.53/hugo_0.53_Linux-64bit.tar.gz
+RUN tar -xzvf hugo_0.53_Linux-64bit.tar.gz 
 
 COPY entrypoint.sh /entrypoint.sh
 
